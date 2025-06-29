@@ -121,9 +121,7 @@ export default function Contact() {
                                     <div className="d-flex align-items-center gap-2">
                                         <div className="title-line"></div>
                                         <h2 className="display-four n5-color fw-semibold">Get In Touch</h2></div>
-                                    <p className="fs-seven n4-color mt-2 mt-md-4">If you are going to use a passage of Lorem
-                                        Ipsum, you need to be sure there isn&#x27;t anything embarrassing hidden in the
-                                        middle of text.</p></div>
+                                    <p className="fs-seven n4-color mt-2 mt-md-4">Feel free to reach out I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p></div>
                             </div>
                             <div >
                                 <form
