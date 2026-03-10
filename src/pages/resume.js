@@ -47,7 +47,7 @@ export default function Resume() {
                                                          xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path>
                                                     </svg>
-                                                    +92 321 6029389</a></li>
+                                                    +97336523934</a></li>
                                                 <li><a className="d-flex gap-2 align-items-center n4-color"
                                                        href="mailto:umeraslamraza1@gmail.com">
                                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0"
@@ -62,7 +62,7 @@ export default function Resume() {
                                                          xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path>
                                                     </svg>
-                                                    Pakistan
+                                                    Bahrain
                                                 </li>
                                             </ul>
                                         </div>
@@ -82,12 +82,26 @@ export default function Resume() {
                                             />
 
                                         </div>
-                                        <p className="n42-color fs-seven">I’m a Full Stack Developer with 5 years of experience creating web and mobile apps that are not just functional but also secure and easy to scale. I’ve spent most of my time working with Laravel and Vue.js, and more recently with React.js and React Native. I enjoy building clean APIs, managing databases like MySQL and MongoDB, and connecting apps with third-party tools. I’m passionate about solving real problems through code and delivering work that makes a difference for clients around the world.</p></div>
+                                        <p className="n42-color fs-seven">Results-driven Full Stack Developer with 6+ years of experience building scalable web platforms and AI-powered applications. Strong expertise in Laravel, React.js, and modern JavaScript ecosystems, with recent experience developing AI-driven systems integrating Large Language Models (LLMs), automation workflows, and intelligent decision engines. Experienced in designing automation pipelines, AI-assisted business systems, and data-driven platforms that improve operational efficiency. Skilled at building full-stack architectures that combine backend APIs, automation engines, and AI integrations for modern SaaS and enterprise applications.</p></div>
                                     <div className="resume-section row pt-60 pb-60 br-bottom-n3">
                                         <div className="col-md-8 col-lg-12 col-xl-8 col-xxl-9">
                                             <div className="d-flex align-items-center gap-2 mb-5 mb-md-10">
                                                 <div className="title-line2"></div>
                                                 <h2 className="fs-three p1-color fw-semibold">Work Experiences</h2></div>
+                                            <div className="mb-4 mb-md-6">
+                                                <div className="d-flex flex-wrap gap-2 gap-sm-3 justify-content-between align-items-center">
+                                                    <span className="n5-color fs-six fw-medium">ActionLabs – Bahrain, Onsite</span><span
+                                                    className="n4-color fs-eight">Full-Stack Developer | Sep 2025 - Present</span></div>
+                                                <p className="n42-color fs-seven my-2 my-md-5">At ActionLabs, I design and develop AI-powered internal systems that integrate Large Language Models (LLMs) with business workflows and enterprise platforms. My work focuses on building intelligent systems that analyze operational and funnel data to support strategic decision making for sales and management teams. I developed AI-driven decision engines that evaluate historical performance data to identify strategies that previously worked best and generate optimized recommendations for future actions.
+
+                                                    To ensure reliability and control, I implemented human-in-the-loop workflows where AI-generated recommendations are reviewed and approved by users before execution. Once approved, these decisions are recorded in structured decision logs and automatically trigger downstream processes such as task creation and workflow execution within internal management systems.
+
+                                                    I also build complex automation pipelines using n8n, integrating multiple APIs, AI services, and business tools to streamline operational processes and reduce manual work. Alongside backend system development using Laravel and modern JavaScript stacks, I design orchestration layers that manage AI responses, automation triggers, and data processing workflows.
+
+                                                    In addition to AI systems and automation platforms, I develop lightweight browser-based interactive experiences using Three.js and WebGL, creating small experimental 3D mini-games and interactive environments for internal projects.
+
+                                                </p>
+                                            </div>
                                             <div className="mb-4 mb-md-6">
                                                 <div className="d-flex flex-wrap gap-2 gap-sm-3 justify-content-between align-items-center">
                                                     <span className="n5-color fs-six fw-medium">Springring – Bahrain, Remote</span><span
@@ -137,6 +151,8 @@ export default function Resume() {
                                                             <li className="n4-color fs-seven">Typescript/Redux/Context/Vuex</li>
                                                             <li className="n4-color fs-seven">PHP/Laravel</li>
                                                             <li className="n4-color fs-seven">MySQL/Mongo DB</li>
+                                                            <li className="n4-color fs-seven">N8N automations</li>
+                                                            <li className="n4-color fs-seven">AI LLM integrations</li>
 
                                                         </ul>
                                                     </div>

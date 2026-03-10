@@ -85,7 +85,7 @@ export default function Contact() {
                                         </svg>
                                     </i>
                                         <div><span className="n5-color fs-five fw-semibold d-block mb-1 mb-sm-2">Phone</span><a
-                                            className="n4-color fs-nine" href="tel:+923216029389">+92 3216029389</a></div>
+                                            className="n4-color fs-nine" href="tel:+923216029389">+973 36523934</a></div>
                                     </div>
                                     <div className="d-flex gap-3 align-items-center p-3 p-md-5 br1-left"><i
                                         className="p1-color fs-one">
@@ -96,7 +96,7 @@ export default function Contact() {
                                         </svg>
                                     </i>
                                         <div><span className="n5-color fs-five fw-semibold d-block mb-1 mb-sm-2">Location</span><span
-                                            className="n4-color fs-nine">Pakistan</span></div>
+                                            className="n4-color fs-nine">Bahrain</span></div>
                                     </div>
                                     <div className="d-flex gap-3 align-items-center p-3 p-md-5 br1-left"><i
                                         className="ph ph-envelope-open p1-color fs-one">

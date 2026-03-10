@@ -80,13 +80,14 @@ export default function Home() {
                                             <span>Developer</span>
                                         </h2>
                                         <p className="fs-seven n4-color mt-2 mt-md-4">
-                                            I help businesses and individuals turn ideas into fast, functional, and
-                                            modern web or mobile apps. Whether it's a portfolio site, an e-commerce
-                                            platform, or a custom dashboard I build solutions that are scalable,
-                                            user-friendly, and tailored to your needs.
-                                            With hands-on experience in both frontend and backend technologies like
-                                            React, and MongoDB, I ensure smooth performance and a seamless user
-                                            experience.
+                                            I help businesses and teams transform ideas into scalable, high-performance web applications and intelligent digital platforms. My work focuses on building modern systems that combine robust backend architecture with interactive frontends and emerging AI capabilities. From business dashboards and SaaS platforms to automation systems and data-driven tools, I develop solutions that are reliable, user-focused, and designed to scale.
+<br/><br/>
+                                            With strong experience across the full stack using technologies such as Laravel, React, and modern JavaScript frameworks, I build applications that deliver smooth performance and seamless user experiences. I also work on integrating AI technologies, automation workflows, and data analysis systems that help organizations streamline operations, gain insights, and make more informed decisions.
+<br/><br/>
+                                            Alongside enterprise platforms and internal business tools, I also experiment with interactive web technologies such as Three.js to create engaging browser-based experiences and lightweight 3D applications.
+<br/><br/>
+                                            My work spans full-stack development, AI integrations, automation systems, and scalable platform architecture, with a focus on building practical solutions that support real business needs. Explore my project portfolio and online resume to learn more about the systems and platforms I have developed.
+
                                             <br/>
                                         </p>
                                         <ul className="fs-seven n4-color mt-2 mt-md-4">
