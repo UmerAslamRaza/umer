@@ -22,7 +22,7 @@ export default function Resume() {
                             <div className="pb-60 br-bottom-n3">
                                 <div data-aos="zoom-in" className="page-heading"><h3
                                     className="page-title fs-onefw-semibold n5-color mb-2 mb-md-3 text-center">Online
-                                    Resume</h3><Link href="/resume_old.pdf"
+                                    Resume</h3><Link href="/resume.pdf"
                                                   className="w-max p-btn bg1-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"
                                                   download="">
                                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 256 256"
