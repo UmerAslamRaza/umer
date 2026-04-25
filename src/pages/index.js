@@ -151,7 +151,7 @@ export default function Home() {
                                 <div
                                     className="banner-counter d-flex flex-wrap flex-xl-nowrap align-items-center gap-3 gap-md-6 mt-10 mt-md-17">
                                     <div className="d-flex align-items-center gap-2 gap-xl-4"><h2
-                                        className="display-two fw-semibold p1-color"><span>5</span></h2>
+                                        className="display-two fw-semibold p1-color"><span>6</span></h2>
                                         <div className="line"></div>
                                         <span className="n5-color">Years of Experience</span></div>
                                     <div className="d-flex align-items-center gap-2 gap-xl-4"><h2
@@ -177,7 +177,7 @@ export default function Home() {
                                                 <h2 className="display-four n5-color fw-semibold">What I do</h2>
                                             </div>
                                             <p className="fs-seven n4-color mt-2 mt-md-4">I’m a Full Stack Developer
-                                                with 5 years of experience creating web and mobile apps that are not
+                                                with 6+ years of experience creating web and mobile apps that are not
                                                 just functional but also secure and easy to scale. I’ve spent most of my
                                                 time working with Laravel and Vue.js, and more recently with React.js
                                                 and React Native. I enjoy building clean APIs, managing databases like
