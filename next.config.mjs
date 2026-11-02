@@ -10,7 +10,9 @@ const nextConfig = {
   reactStrictMode: false,
   output: 'export',
   trailingSlash: true,
-  basePath,
+  // Written as "key: value" (not shorthand) on purpose: GitHub's configure-pages
+  // action rewrites this value during deploy and breaks the shorthand form.
+  basePath: basePath,
   assetPrefix: basePath,
   images: {
     unoptimized: true,
