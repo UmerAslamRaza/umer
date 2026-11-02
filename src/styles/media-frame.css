@@ -1,0 +1,107 @@
+/*
+ * Framed project images (detail page slider + section screenshots).
+ *
+ * The screenshot is always shown in full, scaled to fit, so portrait phone
+ * screens and wide desktop screens both look right. It sits as a rounded card
+ * with a soft shadow, so dark screenshots still stand out. The space around it
+ * is filled with a soft, blurred copy of the same image over a light tint.
+ */
+
+.media-frame {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    isolation: isolate;
+    border-radius: 16px;
+    background-color: rgba(var(--n2), 1);
+    border: 1px solid rgba(0, 0, 0, .06);
+}
+
+.media-frame__backdrop {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(32px) saturate(1.3);
+    transform: scale(1.25);
+    opacity: .45;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.media-frame__stage {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.media-frame__img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .08), 0 14px 32px rgba(0, 0, 0, .28);
+    transition: transform .5s ease-in-out;
+}
+
+/* Slider on the project detail page */
+.media-frame--slide {
+    height: 260px;
+}
+
+@media (min-width: 576px) {
+    .media-frame--slide {
+        height: 340px;
+    }
+}
+
+@media (min-width: 768px) {
+    .media-frame--slide {
+        height: 460px;
+    }
+}
+
+@media (min-width: 992px) {
+    .media-frame--slide {
+        height: 600px;
+    }
+
+    .media-frame--slide .media-frame__stage {
+        padding: 28px;
+    }
+}
+
+/* Screenshots under each project section */
+.media-frame--section {
+    aspect-ratio: 4 / 3;
+}
+
+.media-frame--section:hover .media-frame__img {
+    transform: scale(1.04);
+}
+
+/* Project card thumbnails (fill the fixed-height card; see components/ProjectCard.js) */
+.project-card .thumb .post-thumb,
+.project-card .thumb .post-thumb-inner {
+    height: 100%;
+}
+
+.media-frame--card {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+}
+
+/* Desktop / long-page screenshots: fill edge to edge, keep the top (header/hero) visible */
+.project-card .project-thumb-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}

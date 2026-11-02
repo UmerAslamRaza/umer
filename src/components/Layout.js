@@ -1,13 +1,10 @@
-'use client';
-import Sidebar from './Sidebar';
+import Sidebar from '@/components/Sidebar';
 
-const Layout = ({ children }) => {
+export default function Layout({children}) {
     return (
         <div className="d-flex">
-            <Sidebar />
+            <Sidebar/>
             {children}
         </div>
     );
-};
-
-export default Layout;
+}

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "cv": "bash scripts/build-cv.sh"
   },
   "dependencies": {
     "markdown-to-jsx": "^7.7.6",

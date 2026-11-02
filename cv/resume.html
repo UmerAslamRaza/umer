@@ -1,0 +1,255 @@
+<!doctype html>
+<!--
+  CV source (German tabular "Lebenslauf" format, English language).
+  Edit this file, then run `npm run cv` to regenerate public/resume.pdf.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Umer Aslam – CV</title>
+<style>
+  @page { size: A4; margin: 12mm 15mm 12mm 15mm; }
+
+  :root {
+    --ink: #1f2933;
+    --muted: #52606d;
+    --accent: #1f3a5f;
+    --rule: #c9d2dc;
+    --date-col: 26mm;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9.6pt;
+    line-height: 1.38;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+
+  /* Header */
+  header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8mm; }
+  h1 { margin: 0; font-size: 22pt; font-weight: 700; letter-spacing: .3pt; color: var(--accent); }
+  .headline { margin: 1mm 0 3mm; font-size: 11.5pt; font-weight: 500; color: var(--ink); }
+  .contact { margin: 0; color: var(--muted); font-size: 9.2pt; line-height: 1.6; }
+  .contact .sep { margin: 0 1.6mm; color: var(--rule); }
+  .photo { width: 30mm; height: 30mm; object-fit: cover; border-radius: 2mm; flex-shrink: 0; }
+
+  /* Sections */
+  section { margin-top: 4.6mm; }
+  h2 {
+    margin: 0 0 2mm;
+    padding-bottom: 1mm;
+    font-size: 10pt;
+    font-weight: 700;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 0.8pt solid var(--rule);
+  }
+
+  /* Tabular rows: label/date column + content */
+  .row { display: grid; grid-template-columns: var(--date-col) 1fr; column-gap: 4mm; margin-bottom: 2mm; }
+  .row.keep { break-inside: avoid; }
+
+  /* Stacked entries (experience, projects, education): meta line, title, details */
+  .entry { margin-bottom: 3mm; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry.keep { break-inside: avoid; }
+  .meta { color: var(--muted); font-size: 8.6pt; margin-top: .3mm; }
+  .entry-head .title, .entry-head .org { font-size: 10.5pt; }
+  .org-loc { color: var(--muted); font-size: 9.6pt; }
+  .meta .sep { margin: 0 1.4mm; color: var(--rule); }
+  .entry-head { break-after: avoid; }
+  .experience { padding-bottom: 3mm; }
+  .basic { color: var(--muted); font-style: italic; }
+  .more-link { margin-top: 2mm; font-size: 9pt; color: var(--muted); }
+
+  li { break-inside: avoid; }
+  h2 { break-after: avoid; }
+  .row:last-child { margin-bottom: 0; }
+  .when { color: var(--muted); font-size: 9pt; padding-top: .3mm; white-space: nowrap; }
+  .label { font-weight: 700; font-size: 9.2pt; padding-top: .1mm; }
+  .title { font-weight: 700; }
+  .org { font-weight: 500; }
+  .where { color: var(--muted); font-style: italic; font-size: 9pt; }
+  .stack { color: var(--muted); font-size: 8.8pt; margin-top: .4mm; }
+  p { margin: 0; }
+  ul { margin: 1mm 0 0; padding-left: 4mm; }
+  li { margin-bottom: .4mm; }
+  li:last-child { margin-bottom: 0; }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Umer Aslam</h1>
+    <p class="headline">Senior Full Stack Developer · AI &amp; Automation</p>
+    <p class="contact">
+      Chemnitz, Germany<span class="sep">|</span><a href="mailto:umeraslamraza1@gmail.com">umeraslamraza1@gmail.com</a><span class="sep">|</span><a href="https://github.com/UmerAslamRaza">github.com/UmerAslamRaza</a><br>
+      <a href="https://www.linkedin.com/in/umer-aslam-raza-/">linkedin.com/in/umer-aslam-raza-</a><span class="sep">|</span><a href="https://umeraslamraza.github.io/umer/">Portfolio: umeraslamraza.github.io/umer</a>
+    </p>
+  </div>
+  <img class="photo" src="photo.jpeg" alt="Umer Aslam">
+</header>
+
+<section>
+  <h2>Profile</h2>
+  <p>Senior Full Stack Developer with 6+ years building SaaS platforms and production AI systems in Laravel, React and TypeScript. I integrate LLMs (GPT-4, Claude), RAG pipelines and n8n automation into real business workflows. Highlights include an AI decision engine that turns sales-funnel data into approved, automated follow-up tasks, and Chillup, an event booking platform that reached 10,000+ users, built for clients across the Gulf, Europe and North America.</p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="row keep"><div class="label">AI &amp; LLMs</div><div>LLM Integration, OpenAI GPT-4, Claude API, Groq, RAG, AI Agents, Prompt Engineering, pgvector / Embeddings</div></div>
+  <div class="row keep"><div class="label">Automation</div><div>Workflow Automation, Firecrawl, n8n, Human-in-the-Loop Workflows</div></div>
+  <div class="row keep"><div class="label">Frontend</div><div>JavaScript, TypeScript, React, Next.js, Vue.js, Nuxt.js, HTML5, CSS3, Tailwind CSS, Redux, Three.js, React Native</div></div>
+  <div class="row keep"><div class="label">Backend</div><div>PHP, Laravel, Node.js, REST APIs, GraphQL, Webhooks, WebSockets, JWT, OAuth, SSO · <span class="basic">basic:</span> SOAP, RabbitMQ, Swagger / OpenAPI</div></div>
+  <div class="row keep"><div class="label">Cloud &amp; DevOps</div><div>Docker, CI/CD Pipelines, Git / GitHub · <span class="basic">basic:</span> Kubernetes, AWS, Google Cloud (GCP), DigitalOcean, Laravel Forge</div></div>
+  <div class="row keep"><div class="label">Databases</div><div>PostgreSQL, MySQL, MongoDB, Firebase · <span class="basic">basic:</span> pgBadger</div></div>
+  <div class="row keep"><div class="label">Monitoring &amp; Quality</div><div><span class="basic">basic:</span> Sentry, OpenTelemetry, SonarQube</div></div>
+  <div class="row keep"><div class="label">Testing &amp; Tools</div><div>Unit Testing (PHPUnit, Jest), E2E Testing (Cypress), Postman, Agile / Scrum · <span class="basic">basic:</span> Lucidchart, incident.io</div></div>
+</section>
+
+<section class="experience">
+  <h2>Work Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div><span class="title">Senior Full Stack Developer – AI &amp; Automation</span>, <span class="org">Action Labs Consultants</span> <span class="org-loc">(Bahrain)</span></div>
+      <div class="meta">09/2025 – Present<span class="sep">|</span>Onsite, Bahrain until 10/2026<span class="sep">|</span>Remote from Germany since 11/2026</div>
+    </div>
+      <ul>
+        <li>Integrated GPT-4 and Claude into internal marketing and operations platforms, turning manual review and processing steps into AI-assisted workflows.</li>
+        <li>Built an AI decision engine that reviews past sales-funnel performance and recommends the strategies that worked best; once a user approves, it automatically creates the follow-up tasks, and every decision is logged for audit.</li>
+        <li>Automated workflows across internal APIs, CRM tools and external data sources with n8n, removing hours of manual work each week.</li>
+      </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div><span class="title">Full Stack Developer</span>, <span class="org">Springring</span> <span class="org-loc">(Bahrain)</span></div>
+      <div class="meta">11/2023 – 12/2024<span class="sep">|</span>Remote</div>
+    </div>
+      <ul>
+        <li>Merged three separate apps (student, teacher, parent) into one React application, so each feature is built once instead of three times.</li>
+        <li>Architected an end-to-end encrypted messaging platform where students, teachers and parents communicate in one place, each seeing only what their role allows.</li>
+        <li>Built real-time chat and notifications with WebSockets and Laravel Reverb, so messages arrive instantly without page reloads.</li>
+      </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div><span class="title">Full Stack Developer</span>, <span class="org">VII Tech Solutions</span> <span class="org-loc">(Bahrain)</span></div>
+      <div class="meta">08/2022 – 11/2023<span class="sep">|</span>Remote</div>
+    </div>
+      <ul>
+        <li>Launched Chillup, a web and mobile event booking platform that reached 10,000+ users in its first quarter.</li>
+        <li>Built Laravel REST APIs with JWT auth and Google Maps / Mapbox routing, including live geolocation for a healthcare transportation app.</li>
+        <li>Made mobile pages load faster with lazy loading, caching and smaller bundles, so fewer users left before the page appeared.</li>
+      </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div><span class="title">Full Stack Developer</span>, <span class="org">Tres Logics</span> <span class="org-loc">(Pakistan)</span></div>
+      <div class="meta">10/2021 – 09/2022<span class="sep">|</span>Onsite</div>
+    </div>
+      <ul>
+        <li>Improved the database design behind Laravel REST APIs for faster responses.</li>
+        <li>Built a question-management module that catches admin input mistakes before questions go live, plus Q&amp;A apps in Vue.js and React Native used by thousands of students.</li>
+      </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div><span class="title">Laravel Developer</span>, <span class="org">Tabs Group International</span> <span class="org-loc">(Pakistan)</span></div>
+      <div class="meta">10/2020 – 10/2021<span class="sep">|</span>Onsite</div>
+    </div>
+      <ul>
+        <li>Built automated ride assignment with Laravel and Google Maps that matches rides to nearby drivers and balances workload, reducing driver wait time.</li>
+      </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div><span class="title">Full Stack Intern</span>, <span class="org">Code Brisk</span> <span class="org-loc">(Pakistan)</span></div>
+      <div class="meta">04/2019 – 09/2019<span class="sep">|</span>Onsite</div>
+    </div>
+      <ul>
+        <li>Built a real-time results system and an article publishing platform with 90%+ unit test coverage.</li>
+      </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Key Projects</h2>
+
+  <div class="row keep">
+    <div class="when">In development</div>
+    <div>
+      <div class="title">AI Sales Intelligence Platform</div>
+      <div class="stack">Firecrawl, PostgreSQL + pgvector, OpenAI Embeddings, Groq, React, Laravel, n8n</div>
+      <ul>
+        <li>Finds stakeholders, competitors and company data from natural-language queries, using semantic search over millions of scraped records.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row keep">
+    <div class="when">Al Salam Bank</div>
+    <div>
+      <div class="title">Danat Experience &amp; Project Dream</div>
+      <div class="stack">Laravel, React</div>
+      <ul>
+        <li>Gamified campaign platforms for a Bahraini bank (Project Dream with Visa): OTP sign-in, points engine, live leaderboards and prize draws.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row keep">
+    <div class="when">Government</div>
+    <div>
+      <div class="title">Bahrain.com &amp; Calender.bh</div>
+      <div class="stack">Laravel, MySQL, Google Maps API</div>
+      <ul>
+        <li>National event and visa booking platform for the Bahrain Tourism Authority.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="more-link">More projects with screenshots: <a href="https://umeraslamraza.github.io/umer/portfolio/">umeraslamraza.github.io/umer/portfolio</a></p>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="row keep">
+    <div class="when">09/2016 – 07/2020</div>
+    <div>
+      <div class="title">Bachelor of Science in Computer Science</div>
+      <div class="where">University of Sargodha, Pakistan</div>
+      <div>Recognised in Germany (anabin H+)</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <div class="row keep"><div class="when">2025</div><div>Meta Front-End Developer – Coursera</div></div>
+  <div class="row keep"><div class="when">2025</div><div>Front End Development Libraries – freeCodeCamp</div></div>
+  <div class="row keep"><div class="when">2025</div><div>Scrum Fundamentals Certified – SCRUMstudy</div></div>
+</section>
+
+<section>
+  <h2>Languages</h2>
+  <div class="row keep"><div class="label">English</div><div>Intermediate (B1)</div></div>
+  <div class="row keep"><div class="label">German</div><div>A1, actively learning</div></div>
+</section>
+
+</body>
+</html>

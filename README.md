@@ -1,40 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Umer Aslam Raza – Portfolio
 
-## Getting Started
+Personal portfolio built with Next.js (Pages Router), exported as a static site and deployed to
+GitHub Pages at <https://umeraslamraza.github.io/umer/>.
 
-First, run the development server:
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # static export to ./out (uses the /umer base path)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Editing content
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+All content lives in `src/data`. Pages render from these files, so you don't need to edit any JSX
+to update the site.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+| File | What it controls |
+| --- | --- |
+| `site.js` | Name, role, location, photos, email/phone, social links, contact form endpoint, default SEO tags |
+| `home.js` | Home page intro, stats counters, "What I do" service cards |
+| `resume.js` | Resume summary, work experience, skills, education, languages, interests |
+| `projects.js` | Portfolio projects (each `id` becomes `/portfolio/<id>/`; `featured: true` shows it on the home page) |
+| `projectGalleries.js` | Screenshot galleries for each project |
+| `testimonials.js` | Client testimonials (`isImage` adds a screenshot, `isVideo` adds a video) |
+| `navigation.js` | Sidebar / mobile navigation items (badge counts are computed automatically) |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Images and other static files go in `public/`. Reference them with a leading slash
+(e.g. `/images/foo.png`). **Paths are case-sensitive on GitHub Pages**, so they must match the
+file name exactly.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```
+src/
+  components/   Shared UI (Sidebar, ProjectCard, PillLink, SectionHeading, icons, ...)
+  data/         Site content (see above)
+  hooks/        useTheme, responsive size hooks
+  lib/          Theme helpers
+  pages/        Routes; portfolio/[slug].js is pre-rendered for every project
+  styles/       Template stylesheets
+  utils/        Base-path helper for static asset URLs
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+The base path (`/umer`) is set once in `next.config.mjs`. Page links use `next/link`, which applies
+it automatically. Raw asset URLs (images, video, PDFs) use `withBasePath()` from `src/utils/basePath.js`.

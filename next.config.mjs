@@ -1,16 +1,25 @@
 /** @type {import('next').NextConfig} */
+
+// The site is served from GitHub Pages at https://<user>.github.io/<repo>/,
+// so every production URL needs the repository name as a prefix.
+const REPO_NAME = 'umer';
 const isProd = process.env.NODE_ENV === 'production';
-const repo = 'umer';
+const basePath = isProd ? `/${REPO_NAME}` : '';
 
 const nextConfig = {
   reactStrictMode: false,
+  output: 'export',
+  trailingSlash: true,
+  basePath,
+  assetPrefix: basePath,
   images: {
     unoptimized: true,
   },
-  output: 'export',
-  basePath: isProd ? `/${repo}` : '',
-  assetPrefix: isProd ? `/${repo}` : '',
-  trailingSlash: true,
+  // Exposed to the client so plain asset URLs (images, videos, PDFs) can be
+  // prefixed the same way Next.js prefixes its own links.
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;
